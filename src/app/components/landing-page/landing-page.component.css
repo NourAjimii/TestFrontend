@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+}
+
+
+#image2{
+  width: 1440px; /* Set the width to 100% of the parent container (body) */
+  height: 500px; /* Maintain the aspect ratio of the image */
+  display: block; /* Ensure it behaves like a block element */
+  margin: 0;
+}
+
+.paragraph {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 50px;
+  width: 40%;
+  text-align: center;
+}
+
+.paragraph p {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 20px;
+  background-color: #c9356c;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 30px;
+}
+
+
+.discover h2 {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+.discover button {
+  display: inline-block;
+  margin-left: 900px; /* Adjust the margin as needed */
+}
+
+#titleCourse{
+  font-weight: bold;
+  font-size: 30px;
+}
+
+#price{
+  font-size: 20px;
+  font-weight: bold;
+  color: #c9356c;
+}
+
+.custom-card {
+  background-color: #fdb44b;
+  color: black;
+  border-radius: 50px;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.custom-input {
+  border-radius: 60px;
+  font-weight: bolder;
+}
+
+.custom-button {
+  border-radius: 10px;
+  margin-top: 20px;
+  display: block; /* Ensures the button is a block element */
+  margin-left: auto; /* Aligns the button to the center horizontally */
+  margin-right: auto;
+
+}
+
+.container {
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.row {
+  flex: 1;
+}
+
+.col-md-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.beige-input {
+  background-color: #fde9df;
+  border-radius: 10px;
+}

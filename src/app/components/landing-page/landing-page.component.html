@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <br>
+  <img src="../../../assets/The%20Bridge.png" />
+  <br><br>
+  <div>
+    <img id="image2" src="../../../assets/image3.jpg" />
+    <div class="paragraph">
+      <p>Improve your skills on your own</p>
+      <p>To prepare for a better future</p>
+      <button type="button" >Register Now</button>
+    </div>
+  </div>
+
+  <div class="discover">
+    <br>
+    <h2>Discover Our Courses</h2>
+  <button type="button" (click)="goToCourses()">View More</button>
+  </div>
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4" *ngFor="let course of courses">
+        <div class="card" style="max-width: 400px; margin: 0.5rem;">
+          <img class="card-img-top mx-auto" [src]="course.image" alt="Card image cap" style="width: 100%; height: 200px; object-fit: cover;">
+          <div class="card-body text-center">
+            <h5 class="card-title" id="titleCourse" *ngFor="let title of course.titles">{{ title.nom }}</h5>
+            <p class="card-text" id="price">{{ course.price }} DT/Month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mt-5">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-6">
+        <div class="card custom-card">
+          <div class="card-body">
+            <h4 class="card-title text-center font-weight-bold">Contact Us</h4>
+
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control custom-input beige-input" id="name" placeholder="Jiara Martins">
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control custom-input beige-input" id="email" placeholder="hello@reallygreatsite.com">
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control custom-input beige-input" id="message" rows="3" placeholder="Write your message here"></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="btn btn-dark custom-button mx-auto ">Send the message</button>
+              </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+</body>
+</html>
